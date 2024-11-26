@@ -1,0 +1,113 @@
+{
+    "info": {
+      "name": "Golf Club API",
+      "description": "Postman collection for testing Golf Club API endpoints.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Add Member",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Gale Brawn\",\n  \"address\": \"12 South Park\",\n  \"email\": \"Galethecatlover@gmail.com\",\n  \"phoneNumber\": \"445-7768\",\n  \"startDateOfMembership\": \"2024-01-01\",\n  \"durationOfMembership\": 12\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/members",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["members"]
+          }
+        }
+      },
+      {
+        "name": "Get All Members",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/members",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["members"]
+          }
+        }
+      },
+      {
+        "name": "Search Members by Name",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/members?name=Gale Brawn",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["members"],
+            "query": [
+              {
+                "key": "name",
+                "value": "Gale Brawn"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Add Tournament",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"startDate\": \"2024-03-15\",\n  \"endDate\": \"2024-03-20\",\n  \"location\": \"Green Valley Course\",\n  \"entryFee\": 100.0,\n  \"cashPrize\": 5000.0\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/tournaments",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["tournaments"]
+          }
+        }
+      },
+      {
+        "name": "Get All Tournaments",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/tournaments",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["tournaments"]
+          }
+        }
+      },
+      {
+        "name": "Find Members in Tournament",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/tournaments/1/members",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["tournaments", "1", "members"]
+          }
+        }
+      }
+    ]
+  }
