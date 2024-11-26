@@ -1,8 +1,8 @@
- Author: Alexander Escott
- Title: Golf Club Api
- Hours taken: 9
- difficulty: 5 out of 10
- ressources used: Youtube, Class Lectures, Stack
+# Author: Alexander Escott
+# Title: Golf Club Api
+# Hours taken: 9
+# difficulty: 5 out of 10
+# ressources used: Youtube, Class Lectures, Stack
  
 # GolfTournamentApiRepo
 # Golf Club Management System
