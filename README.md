@@ -102,7 +102,7 @@ This is a Spring Boot-based application that manages members, tournaments, and t
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Technerd03/golfclub.git
+   git clone https://github.com/Technerd03/golfclubapi.git
    cd golfclub
 
 2. Build the Docker image:
